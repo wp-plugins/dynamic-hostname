@@ -1,10 +1,9 @@
 === Dynamic Hostname ===
 Contributors:      miyauchi, megumithemes, tekapo, inc2734, toro_unit
-Donate link:       https://wpist.me/
 Tags: wp_home, site_url, hostname, vagrant cloud
 Requires at least: 3.8
-Tested up to:      3.9
-Stable tag:        0.4.0
+Tested up to:      4.1
+Stable tag:        0.4.1
 License:           GPLv2
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,21 +26,21 @@ This plugin uses below filter hooks to replace the host name in URL.
 
 `
 $hooks = array(
-"home_url",
-"site_url",
-"stylesheet_directory_uri",
-"template_directory_uri",
-"plugins_url",
-"wp_get_attachment_url",
-"theme_mod_header_image",
-"theme_mod_background_image",
-"the_content",
-"upload_dir",
-"widget_text",
+    "home_url",
+    "site_url",
+    "stylesheet_directory_uri",
+    "template_directory_uri",
+    "plugins_url",
+    "wp_get_attachment_url",
+    "theme_mod_header_image",
+    "theme_mod_background_image",
+    "the_content",
+    "upload_dir",
+    "widget_text",
 );
 `
 
-Those hooks have also their own fileter hooks, so you can customize with other plugins etc. you are using.
+Those hooks have also their own filter hooks, so you can customize with other plugins etc. you are using.
 
 `add_filter('dynamic_hostname_filters' function($hooks){
     $hooks[] = 'some_filter_hook';
@@ -53,10 +52,13 @@ Those hooks have also their own fileter hooks, so you can customize with other p
 = Manual Installation =
 
 1. Upload the entire `/dynamic-hostname` directory to the `/wp-content/plugins/` directory.
-2. Activate Aa through the 'Plugins' menu in WordPress.
+2. Activate As through the 'Plugins' menu in WordPress.
 
 == Changelog ==
 
+= 0.4.1 =
+
+* Tested up to 4.1
+
 = 0.1.0 =
 * First release
-
