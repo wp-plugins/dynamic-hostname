@@ -3,7 +3,7 @@
  * Plugin Name: Dynamic Hostname
  * Plugin URI:  https://vccw.cc/
  * Description: Set hostname dynamically for the development.
- * Version:	 0.4.1
+ * Version:	 0.4.2
  * Author:	  Takayuki Miyauchi
  * Author URI:  https://wpist.me/
  * License:	 GPLv2
